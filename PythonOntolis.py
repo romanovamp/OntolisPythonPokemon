@@ -1,4 +1,3 @@
-
 #!/usr/bin/env/ python3
 # -*- coding: utf-8 -*-
 
@@ -8,18 +7,29 @@ import random as r
 import sys
 from onto.onto import Onto
 
-def findColumn(ontoData, onto, columnName):
+def findColumn(onto, ontoData, columnName):
     ontoColumns = onto.get_nodes_linked_from(ontoData, "has")
+    checkNode(ontoColumns)
     for ontoColumn in ontoColumns:
         if ontoColumn["name"] == columnName:
             return ontoColumn
     return None
 
+def checkColor(onto, ontoData, colorName):
+    ontoColorTypes = onto.get_nodes_linked_from(ontoData, "has")
+    checkNode(ontoColorTypes)
+    for ontoColorType in ontoColorTypes:
+        ontoColors = onto.get_nodes_linked_from(ontoColorType, "instance_of")
+        checkNode(ontoColors)
+        for ontoColor in ontoColors:
+            if ontoColor == colorName:
+                 return True
+    return False
+
 def checkNode(node):
-    if (node == None): 
+    if (node == []): 
         print ('Онтология задана некорректно')
         sys.exit(0)
-
 
 onto = Onto.load_from_file("onto.ont")
 
@@ -41,9 +51,8 @@ checkNode(nodeColor)
 colorTypes = onto.get_nodes_linked_to(nodeColor,"is_a")
 checkNode(colorTypes)
 
-
 for column in df.columns: 
-    ontoColumn = findColumn(myData, onto, column) #находим столбцы, наименование которых есть в онтологии (Type1, Type2)
+    ontoColumn = findColumn(onto, myData, column) #находим столбцы, наименование которых есть в онтологии (Type1, Type2)
     if ontoColumn:
         indx = indx + 1
         ontoCharts = onto.get_nodes_linked_from(ontoColumn, "use_for")
@@ -53,8 +62,14 @@ for column in df.columns:
             chartType = onto.first(onto.get_nodes_linked_from(ontoChart,"instance_of")) 
             visCodeChartType = chartType["attributes"]["exec"]
 
-            # выбор цвета, исключение его из списка
+            # выбор цвета
             colorType=colorTypes[r.randint(0, len(colorTypes)-1)]
+
+            # чарту ontoChart доступны не все цвета, поэтому проверка 
+            while not checkColor(onto, ontoChart, colorType):
+                colorType=colorTypes[r.randint(0, len(colorTypes)-1)]
+
+            # исключить найденный цвет из списка, чтобы далее не повторялись
             colorTypes.remove(colorType)
 
             # отрисовка графика

@@ -1283,9 +1283,147 @@
             "operation_type": "Do",
             "relation_id": 58,
             "timestamp": 1607878633
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:23:23Z",
+            "destination_id": 29,
+            "name": "instance_of",
+            "namespace": "http://knova.ru/user/1607866781384",
+            "operation": "Relation removed",
+            "operation_type": "Do",
+            "relation_id": 36,
+            "source_id": 25,
+            "timestamp": 1607880203
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:23:23Z",
+            "destination_id": 30,
+            "name": "instance_of",
+            "namespace": "http://knova.ru/user/1607866781384",
+            "operation": "Relation removed",
+            "operation_type": "Do",
+            "relation_id": 37,
+            "source_id": 25,
+            "timestamp": 1607880203
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:23:24Z",
+            "destination_id": 32,
+            "name": "instance_of",
+            "namespace": "http://knova.ru/user/1607866781384",
+            "operation": "Relation removed",
+            "operation_type": "Do",
+            "relation_id": 55,
+            "source_id": 25,
+            "timestamp": 1607880204
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:23:25Z",
+            "destination_id": 33,
+            "name": "instance_of",
+            "namespace": "http://knova.ru/user/1607866781384",
+            "operation": "Relation removed",
+            "operation_type": "Do",
+            "relation_id": 57,
+            "source_id": 25,
+            "timestamp": 1607880205
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:24:24Z",
+            "destination_id": 31,
+            "name": "instance_of",
+            "namespace": "http://knova.ru/user/1607866781384",
+            "operation": "Relation removed",
+            "operation_type": "Do",
+            "relation_id": 44,
+            "source_id": 26,
+            "timestamp": 1607880264
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:24:25Z",
+            "destination_id": 32,
+            "name": "instance_of",
+            "namespace": "http://knova.ru/user/1607866781384",
+            "operation": "Relation removed",
+            "operation_type": "Do",
+            "relation_id": 53,
+            "source_id": 26,
+            "timestamp": 1607880265
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:24:32Z",
+            "destination_id": 33,
+            "name": "instance_of",
+            "namespace": "http://knova.ru/user/1607866781384",
+            "operation": "Relation removed",
+            "operation_type": "Do",
+            "relation_id": 46,
+            "source_id": 26,
+            "timestamp": 1607880272
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:24:34Z",
+            "destination_id": 32,
+            "operation": "Relation created",
+            "operation_type": "Do",
+            "relation_id": 59,
+            "source_id": 25,
+            "timestamp": 1607880274
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:24:44Z",
+            "destination_id": 30,
+            "operation": "Relation created",
+            "operation_type": "Do",
+            "relation_id": 60,
+            "source_id": 25,
+            "timestamp": 1607880284
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:24:49Z",
+            "new_name": "instance_of",
+            "new_namespace": "http://knova.ru/user/1607866781384",
+            "old_name": "",
+            "old_namespace": "",
+            "operation": "Relation name changed",
+            "operation_type": "Do",
+            "relation_id": 60,
+            "timestamp": 1607880289
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:24:55Z",
+            "destination_id": 33,
+            "operation": "Relation created",
+            "operation_type": "Do",
+            "relation_id": 61,
+            "source_id": 26,
+            "timestamp": 1607880295
+        },
+        {
+            "author": "romanovamp@yandex.ru",
+            "datetime": "2020-12-13T17:25:03Z",
+            "new_name": "instance_of",
+            "new_namespace": "http://knova.ru/user/1607866781384",
+            "old_name": "",
+            "old_namespace": "",
+            "operation": "Relation name changed",
+            "operation_type": "Do",
+            "relation_id": 61,
+            "timestamp": 1607880303
         }
     ],
-    "last_id": "58",
+    "last_id": "61",
     "namespaces": {
         "default": "http://knova.ru/user/1607866781384",
         "ontolis-avis": "http://knova.ru/ontolis-avis",
@@ -1456,8 +1594,8 @@
             "id": "33",
             "name": "black",
             "namespace": "http://knova.ru/user/1607866781384",
-            "position_x": 710,
-            "position_y": 571
+            "position_x": 707,
+            "position_y": 570
         },
         {
             "attributes": {
@@ -1608,44 +1746,8 @@
         {
             "attributes": {
             },
-            "destination_node_id": "29",
-            "id": "36",
-            "name": "instance_of",
-            "namespace": "http://knova.ru/user/1607866781384",
-            "source_node_id": "25"
-        },
-        {
-            "attributes": {
-            },
-            "destination_node_id": "30",
-            "id": "37",
-            "name": "instance_of",
-            "namespace": "http://knova.ru/user/1607866781384",
-            "source_node_id": "25"
-        },
-        {
-            "attributes": {
-            },
             "destination_node_id": "30",
             "id": "43",
-            "name": "instance_of",
-            "namespace": "http://knova.ru/user/1607866781384",
-            "source_node_id": "26"
-        },
-        {
-            "attributes": {
-            },
-            "destination_node_id": "31",
-            "id": "44",
-            "name": "instance_of",
-            "namespace": "http://knova.ru/user/1607866781384",
-            "source_node_id": "26"
-        },
-        {
-            "attributes": {
-            },
-            "destination_node_id": "33",
-            "id": "46",
             "name": "instance_of",
             "namespace": "http://knova.ru/user/1607866781384",
             "source_node_id": "26"
@@ -1698,15 +1800,6 @@
         {
             "attributes": {
             },
-            "destination_node_id": "32",
-            "id": "53",
-            "name": "instance_of",
-            "namespace": "http://knova.ru/user/1607866781384",
-            "source_node_id": "26"
-        },
-        {
-            "attributes": {
-            },
             "destination_node_id": "31",
             "id": "54",
             "name": "instance_of",
@@ -1716,8 +1809,26 @@
         {
             "attributes": {
             },
+            "destination_node_id": "29",
+            "id": "58",
+            "name": "instance_of",
+            "namespace": "http://knova.ru/user/1607866781384",
+            "source_node_id": "26"
+        },
+        {
+            "attributes": {
+            },
             "destination_node_id": "32",
-            "id": "55",
+            "id": "59",
+            "name": "",
+            "namespace": "",
+            "source_node_id": "25"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "30",
+            "id": "60",
             "name": "instance_of",
             "namespace": "http://knova.ru/user/1607866781384",
             "source_node_id": "25"
@@ -1726,16 +1837,7 @@
             "attributes": {
             },
             "destination_node_id": "33",
-            "id": "57",
-            "name": "instance_of",
-            "namespace": "http://knova.ru/user/1607866781384",
-            "source_node_id": "25"
-        },
-        {
-            "attributes": {
-            },
-            "destination_node_id": "29",
-            "id": "58",
+            "id": "61",
             "name": "instance_of",
             "namespace": "http://knova.ru/user/1607866781384",
             "source_node_id": "26"
