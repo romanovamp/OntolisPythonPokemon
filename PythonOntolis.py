@@ -1,5 +1,6 @@
 #!/usr/bin/env/ python3
 # -*- coding: utf-8 -*-
+# Dataset link: https://www.kaggle.com/abcsds/pokemon
 
 import pandas as pd
 import matplotlib.pyplot as plt
